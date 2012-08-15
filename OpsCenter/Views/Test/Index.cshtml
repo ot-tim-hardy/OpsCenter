@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Index";
+    @model IList<Configuration>
+}
+
+<h2>Index</h2>
+
+
+<ul>
+@foreach (var config in Model)
+{
+    <li>@config.ConfigKey = @config.Value</li>
+}
+</ul>
